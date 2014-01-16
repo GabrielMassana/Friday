@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7BC8B351886D84E00C7E9B6 /* ActivityViewCustomProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BC8B341886D84E00C7E9B6 /* ActivityViewCustomProvider.m */; };
 		D7DF554B1885581C00FECAD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF554A1885581C00FECAD2 /* Foundation.framework */; };
 		D7DF554D1885581C00FECAD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF554C1885581C00FECAD2 /* CoreGraphics.framework */; };
 		D7DF554F1885581C00FECAD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF554E1885581C00FECAD2 /* UIKit.framework */; };
@@ -22,6 +23,7 @@
 		D7DF556F1885581C00FECAD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DF554E1885581C00FECAD2 /* UIKit.framework */; };
 		D7DF55771885581C00FECAD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7DF55751885581C00FECAD2 /* InfoPlist.strings */; };
 		D7DF55791885581C00FECAD2 /* FridayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF55781885581C00FECAD2 /* FridayTests.m */; };
+		D7DF55851885595400FECAD2 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF55841885595400FECAD2 /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7BC8B331886D84E00C7E9B6 /* ActivityViewCustomProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewCustomProvider.h; sourceTree = "<group>"; };
+		D7BC8B341886D84E00C7E9B6 /* ActivityViewCustomProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewCustomProvider.m; sourceTree = "<group>"; };
 		D7DF55471885581C00FECAD2 /* Friday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DF554A1885581C00FECAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D7DF554C1885581C00FECAD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +59,8 @@
 		D7DF55741885581C00FECAD2 /* FridayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FridayTests-Info.plist"; sourceTree = "<group>"; };
 		D7DF55761885581C00FECAD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7DF55781885581C00FECAD2 /* FridayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FridayTests.m; sourceTree = "<group>"; };
+		D7DF55831885595400FECAD2 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		D7DF55841885595400FECAD2 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7BC8B321886D84E00C7E9B6 /* Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC8B331886D84E00C7E9B6 /* ActivityViewCustomProvider.h */,
+				D7BC8B341886D84E00C7E9B6 /* ActivityViewCustomProvider.m */,
+			);
+			path = Sharing;
+			sourceTree = "<group>";
+		};
 		D7DF553E1885581C00FECAD2 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +136,8 @@
 				D7DF55621885581C00FECAD2 /* ViewController.h */,
 				D7DF55631885581C00FECAD2 /* ViewController.m */,
 				D7DF55651885581C00FECAD2 /* Images.xcassets */,
+				D7BC8B321886D84E00C7E9B6 /* Sharing */,
+				D7DF55821885595400FECAD2 /* Utils */,
 				D7DF55511885581C00FECAD2 /* Supporting Files */,
 			);
 			path = Friday;
@@ -153,6 +170,15 @@
 				D7DF55751885581C00FECAD2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7DF55821885595400FECAD2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF55831885595400FECAD2 /* Utils.h */,
+				D7DF55841885595400FECAD2 /* Utils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7DF55641885581C00FECAD2 /* ViewController.m in Sources */,
+				D7BC8B351886D84E00C7E9B6 /* ActivityViewCustomProvider.m in Sources */,
 				D7DF555B1885581C00FECAD2 /* AppDelegate.m in Sources */,
 				D7DF55571885581C00FECAD2 /* main.m in Sources */,
+				D7DF55851885595400FECAD2 /* Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +502,7 @@
 				D7DF557E1885581C00FECAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7DF557F1885581C00FECAD2 /* Build configuration list for PBXNativeTarget "FridayTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +511,7 @@
 				D7DF55811885581C00FECAD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
